@@ -1,24 +1,29 @@
-package practice;
+package training;
+
+import java.util.Scanner;
 
 public class Prime {
 
 	public static void main(String[] args) {
-	int num=3;
-	int  i=1;
-	int count=0;
-	while(i<=num) {
-		if(num%i==0) {
-			count++;
+		Scanner pr=new Scanner(System.in);
+		System.out.println("Check wheather the number is prime or not : ");
+		int num=pr.nextInt();
+		int count=0;
+		int i=1;
+		while(i<=num) {
+			if(num%i==0) {
+				count++;
+				}
+			i++;
+			
 		}
-		i++;
-		
-	}
-	if(count==2) {
-		System.out.println("Prime");
-	}else {
-		System.out.println("Not");
-	}
-
+		if(count==2) {
+			System.out.println("prime");
+		}else {
+			System.out.println("Not prime");
+		}
+		}
+	
 	}
 
-}
+
